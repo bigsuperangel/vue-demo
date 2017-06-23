@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>vuetable-2-tutorial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" media="screen" title="no title"
+    charset="utf-8">
+</head>
+
+<body class="main-wrapper pushable">
+  <side-bar class="ui visible inverted left vertical sidebar menu" style="overflow-x: hidden;">
+    <a class="item header ui ng-binding" href="#/">
+        <i class="big icons">
+        <i class="tasks orange icon"></i>
+        <i class="yellow inverted corner map loading icon"></i>
+        </i>
+        HMZ Admin
+    </a>
+    <a class="item" href="#/" ng-class="{'active': (selectedMenu == '/')}">
+      <i class="icon settings"></i>Dashboard
+    </a>
+    <a class="item" href="#/hello2" ng-class="{'active':(selectedMenu == '/syshealth')}">
+      <i class="icon bar chart"></i>System Health  
+    </a>
+    <a class="item" href="#/table" ng-class="{'active':(selectedMenu == '/support')}">
+      <i class="icon mail"></i>Support
+    </a>
+  </side-bar>
+  <div class="pusher" style="-webkit-transform: translate3d(130px,0,0);transform: translate3d(130px,0,0);">
+    <div id="app"></div>
+  </div>
+  <!-- built files will be auto injected -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js" charset="utf-8"></script>
+</body>
+
+</html>
